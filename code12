@@ -1,1 +1,6 @@
-select value as outletcode,sum as mtd_order_value from ck_sales_aggregation where field_name = 'agg_kpireview_orders_v1' and cadence_key='{{invoke this.CD 'getStartTimeStampInUTC'}}' and alt_grp_value='{{loggedInUserName}}';
+import main
+list=[2,2,3,4,5,6,7,8,9,1,2,4,56,6]
+list=[int(i) for i in list]
+list.sort()
+print(list)
+
